@@ -1,0 +1,153 @@
+:root {
+    --text: #FB8728;
+    --accent1: #99E1E4;
+    --accent2: #4AA888;
+}
+
+body {
+    background-color: #001C2F;
+    font-family: sans-serif;
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: #EBE4DF;
+}
+
+#navbar {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    background-color: #3C3E95;
+    height: 50px;
+}
+
+#navbar > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: inherit;
+    width: 100px;
+}
+
+#navbar > a:hover {
+    background-color: cadetblue;
+}
+
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    color: var(--text);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(3, 2, 44, 0.178));
+}
+
+#greeting {
+    color: var(--accent2);
+    font-weight: normal;
+    font-style: oblique;
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+}
+
+#description {
+    color: var(--accent1);
+    font-weight: 100;
+    font-style: oblique;
+    font-size: 1.8rem;
+    margin-top: 0px;
+}
+
+#welcome-section > h1 {
+    font-size: 4rem;
+    margin: 0px;
+}
+
+#welcome-section > h1 > span {
+    font-size: .7em;
+    font-weight: normal;
+}
+
+#projects {
+    background-color: #F5FAFE;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px
+}
+
+#projects > h2 {
+    margin-top: 60px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333A3E;
+}
+
+#project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin-bottom: 50px;
+}
+
+#project-grid > a {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #EBE4DF;
+    box-shadow: 2px 2px 6px 0px rgb(30 36 107 / 50%);
+}
+
+#profile-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    background-color: #163449;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(3, 2, 44, 0.178));
+}
+
+#profile-section > h2 {
+    margin-top: 0px;
+    margin-bottom: 80px;
+    font-size: 2.5rem;
+    color: #EBE4DF;
+}
+
+#profiles {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 980px;
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+}
+
+#profiles > a {
+    padding: 1rem 2rem;
+    transition: transform 0.3s ease-out;
+}
+
+#profiles > a:hover {
+    transform: scale(1.1);
+}
+
+.fab {
+    font-family: "Font Awesome 5 Brands";
+}
+
+.thumbnail {
+    background-color: #3C3E95;
+    display: block;
+    width: 100%;
+}
